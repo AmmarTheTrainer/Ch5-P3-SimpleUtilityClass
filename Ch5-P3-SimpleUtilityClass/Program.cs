@@ -10,7 +10,16 @@ namespace Ch5_P3_SimpleUtilityClass
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("***** Fun with Static Classes *****\n");
+            
+            // This is just fine.
+            TimeUtilClass.PrintDate();
+            TimeUtilClass.PrintTime();
+            
+            // Compiler error! Can't create instance of static classes!
+            //TimeUtilClass u = new TimeUtilClass();
 
+            Console.ReadLine();
         }
     }
 }
